@@ -7,3 +7,7 @@ excluded_words:
   - typoci
   - easyapi  # My project name
   - noqa     # noqa tag for flake8
+  - rst      # ReSTructured file
+  - md       # Markdown file
+  - markdown
+  - py       # Python file
