@@ -26,7 +26,7 @@ setup(
     author_email="harsh_parekh@outlook.com",
     python_requires=">=3.6",
     classifiers=[
-        "Frameworks :: Flask",
+        "Framework :: Flask",
         "Development Status :: 2 - Pre-Alpha",
         "Environment :: Web Environment",
         "Intended Audience :: Developers",
