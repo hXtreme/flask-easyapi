@@ -2,6 +2,12 @@
 History
 =======
 
+0.0.2 (2020-08-19)
+------------------
+
+* Fix badges in readme
+* Add pyup configuration
+
 0.0.1 (2020-08-19)
 ------------------
 
