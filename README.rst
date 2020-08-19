@@ -27,6 +27,10 @@ Flask-EasyAPI
         :target: https://pyup.io/repos/github/hXtreme/flask-easyapi/
         :alt: Updates
 
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+        :target: https://github.com/psf/black
+        :alt: Code Style - Black
+
 
 
 Rest API on Flask made a little too easy.
