@@ -1,0 +1,15 @@
+exclude:
+  - "LICENSE"
+  - "**/LICENSE"
+
+restylers:
+  - whitespace
+  - shellharden
+  - clang-format
+  - stylish-haskell
+  - reorder-python-imports
+  - black
+  - prettier
+  - prettier-json
+  - prettier-yaml
+  - prettier-markdown
