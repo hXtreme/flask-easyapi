@@ -1,0 +1,9 @@
+dictionaries:
+  - en
+  - en_GB
+
+# Any typos we should ignore?
+excluded_words:
+  - typoci
+  - easyapi  # My project name
+  - noqa     # noqa tag for flake8
