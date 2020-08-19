@@ -6,16 +6,16 @@ Flask-EasyAPI
 .. image:: https://img.shields.io/pypi/v/flask_easyapi.svg
         :target: https://pypi.python.org/pypi/flask_easyapi
 
-.. image:: https://img.shields.io/travis/hXtreme/flask_easyapi.svg
-        :target: https://travis-ci.com/hXtreme/flask_easyapi
+.. image:: https://img.shields.io/travis/com/hXtreme/flask-easyapi.svg
+        :target: https://travis-ci.com/hXtreme/flask-easyapi
 
 .. image:: https://readthedocs.org/projects/flask-easyapi/badge/?version=latest
         :target: https://flask-easyapi.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
-.. image:: https://pyup.io/repos/github/hXtreme/flask_easyapi/shield.svg
-     :target: https://pyup.io/repos/github/hXtreme/flask_easyapi/
+.. image:: https://pyup.io/repos/github/hXtreme/flask-easyapi/shield.svg
+     :target: https://pyup.io/repos/github/hXtreme/flask-easyapi/
      :alt: Updates
 
 
