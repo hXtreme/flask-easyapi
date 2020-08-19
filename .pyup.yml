@@ -1,0 +1,13 @@
+# update schedule
+# default: empty
+# allowed: "every day", "every week", ..
+schedule: "every week"
+
+# Specify requirement files by hand, default is empty
+# default: empty
+# allowed: list
+requirements:
+  - requirements.txt:
+      update: all
+  - requirements_dev.txt:
+      update: all
