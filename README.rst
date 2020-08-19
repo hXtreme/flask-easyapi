@@ -3,27 +3,35 @@ Flask-EasyAPI
 =============
 
 
-.. image:: https://img.shields.io/pypi/v/flask_easyapi.svg
-        :target: https://pypi.python.org/pypi/flask_easyapi
+.. image:: https://img.shields.io/pypi/v/flask-easyapi.svg
+        :target: https://pypi.python.org/pypi/flask-easyapi
+        :alt: Package version`
+
+.. image:: https://img.shields.io/pypi/pyversions/flask-easyapi.svg
+        :target: https://pypi.python.org/pypi/flask-easyapi
+        :alt: Supported python versions
 
 .. image:: https://img.shields.io/travis/com/hXtreme/flask-easyapi.svg
         :target: https://travis-ci.com/hXtreme/flask-easyapi
+        :alt: Bulid status
+
+.. image:: https://img.shields.io/github/license/hXtreme/flask-easyapi.svg
+        :target: https://github.com/hXtreme/flask-easyapi/blob/master/LICENSE
+        :alt: LICENSE
 
 .. image:: https://readthedocs.org/projects/flask-easyapi/badge/?version=latest
         :target: https://flask-easyapi.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
-
 .. image:: https://pyup.io/repos/github/hXtreme/flask-easyapi/shield.svg
-     :target: https://pyup.io/repos/github/hXtreme/flask-easyapi/
-     :alt: Updates
+        :target: https://pyup.io/repos/github/hXtreme/flask-easyapi/
+        :alt: Updates
 
 
 
 Rest API on Flask made a little too easy.
 
 
-* Free software: MIT license
 * Documentation: https://flask-easyapi.readthedocs.io.
 
 
