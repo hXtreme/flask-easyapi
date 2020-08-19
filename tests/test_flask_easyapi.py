@@ -5,7 +5,7 @@
 import pytest
 
 
-from flask_easyapi import flask_easyapi
+from flask_easyapi import flask_easyapi  # noqa: F401
 
 
 @pytest.fixture
