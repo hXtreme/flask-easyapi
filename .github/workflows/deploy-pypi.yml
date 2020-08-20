@@ -7,6 +7,7 @@ on:
     - '*'
 
 jobs:
+
   test:
     runs-on: ubuntu-latest
     strategy:
@@ -24,8 +25,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install tox tox-gh-actions
     - name: Run tests with tox
+      env:
+        TOX_PARALLEL_NO_SPINNER: 1
       run: |
-        tox -p 4
+        tox -p auto
+
   deploy:
     needs: test
     runs-on: ubuntu-latest
