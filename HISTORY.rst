@@ -2,6 +2,13 @@
 History
 =======
 
+0.0.3 (2020-08-19)
+------------------
+
+* Various changes to CI configuration.
+* Update dependencies.
+* Edit README.rst to add badges and alt-text.
+
 0.0.2 (2020-08-19)
 ------------------
 
