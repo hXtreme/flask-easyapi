@@ -51,7 +51,7 @@ setup(
     setup_requires=setup_requirements,
     test_suite="tests",
     tests_require=test_requirements,
-    url="https://github.com/hXtreme/flask_easyapi",
+    url="https://github.com/hXtreme/flask-easyapi",
     version="0.0.5",
     zip_safe=False,
 )
