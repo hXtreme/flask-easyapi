@@ -11,3 +11,4 @@ excluded_words:
   - md       # Markdown file
   - markdown
   - py       # Python file
+  - functools   # python tools for higher-order functions.
