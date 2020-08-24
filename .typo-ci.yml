@@ -12,3 +12,4 @@ excluded_words:
   - markdown
   - py       # Python file
   - functools   # python tools for higher-order functions.
+  - werkzeug  # Werkzeug(TL: tool) used a lot in flask.

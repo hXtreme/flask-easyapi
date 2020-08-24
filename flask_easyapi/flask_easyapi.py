@@ -79,7 +79,7 @@ class EasyAPI(Blueprint):
         """
         A decorator that is used to register an api endpoint
         and its handler. The decorated function will automatically
-        recieve the url parameters as kwargs.
+        receive the url parameters as kwargs.
 
         .. note::  As of v0.0.7 unlike Blueprint, :meth:`route` and
             :meth:`add_url_rule` behaves differently for EasyAPI,
@@ -109,10 +109,10 @@ class EasyAPI(Blueprint):
                         added and handled by the standard request handling.
         """
 
-        def coalesce(mdict):
+        def coalesce(multi_dict):
             return {
                 key: values[0] if len(values) == 1 else values
-                for key, values in mdict.lists()
+                for key, values in multi_dict.lists()
             }
 
         route = partial(Blueprint.route, self)
