@@ -24,9 +24,11 @@ class EasyAPI(Blueprint):
 
     **Keyword arguments passed to Blueprint**
 
-    See `flask api reference <https://flask.palletsprojects.com/en/1.1.x/api/#blueprint-objects>`_
+    See `flask Blueprint api
+    <https://flask.palletsprojects.com/en/1.1.x/api/#blueprint-objects>`_
     for up-to-date information. The following is an extract of docs under
-    `BSD-3-Clause License <https://github.com/pallets/flask/blob/master/LICENSE.rst>`_:
+    `BSD-3-Clause License
+    <https://github.com/pallets/flask/blob/master/LICENSE.rst>`_:
 
     :param static_folder: A folder with static files that should be
         served by the blueprint's static route. The path is relative to
@@ -79,9 +81,32 @@ class EasyAPI(Blueprint):
         and its handler. The decorated function will automatically
         recieve the url parameters as kwargs.
 
+        .. note::  As of v0.0.7 unlike Blueprint, :meth:`route` and
+            :meth:`add_url_rule` behaves differently for EasyAPI,
+            this difference is expected to disappear in later releases.
+
         :param rule: The URL rule as string. See `flask route registrations api
                     <https://flask.palletsprojects.com/en/
                     1.1.x/api/#url-route-registrations>`_
+
+        **Keyword arguments passed to Blueprint**
+
+        See `flask route api <https://flask.palletsprojects.com/en/1.1.x/
+        api/#flask.Flask.route>`_ for up-to-date information.
+        The following is an extract of docs under `BSD-3-Clause License
+        <https://github.com/pallets/flask/blob/master/LICENSE.rst>`_:
+
+        :param endpoint: the endpoint for the registered URL rule.  Flask
+                         itself assumes the name of the view function as
+                         endpoint
+        :param options: the options to be forwarded to the underlying
+                        :class:`~werkzeug.routing.Rule` object.  A change
+                        to Werkzeug is handling of method options.  methods
+                        is a list of methods this rule should be limited
+                        to (``GET``, ``POST`` etc.).  By default a rule
+                        just listens for ``GET`` (and implicitly ``HEAD``).
+                        Starting with Flask 0.6, ``OPTIONS`` is implicitly
+                        added and handled by the standard request handling.
         """
 
         def coalesce(mdict):
