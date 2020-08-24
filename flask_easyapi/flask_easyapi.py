@@ -1,6 +1,12 @@
 from typing import Callable
-from flask import Blueprint
-from functools import wraps, partial
+from flask import (
+    Blueprint,
+    request,
+)
+from functools import (
+    partial,
+    wraps,
+)
 
 
 class EasyAPI(Blueprint):
@@ -67,15 +73,33 @@ class EasyAPI(Blueprint):
         self.args = args
         self.kwargs = {kw: kwargs[kw] for kw in kwargs.keys() - bp_kwargs}
 
-    def api(self, rule: str, **options):
+    def route(self, rule: str, **options):
+        """
+        A decorator that is used to register an api endpoint
+        and its handler. The decorated function will automatically
+        recieve the url parameters as kwargs.
+
+        :param rule: The URL rule as string. See `flask route registrations api
+                    <https://flask.palletsprojects.com/en/
+                    1.1.x/api/#url-route-registrations>`_
+        """
+
+        def coalesce(mdict):
+            return {
+                key: values[0] if len(values) == 1 else values
+                for key, values in mdict.lists()
+            }
+
         route = partial(Blueprint.route, self)
 
         def api_decorator(func: Callable):
             @route(rule, **options)
             @wraps(func)
-            def api_wrapper(*args, **kwargs):
-                return func(*args, **kwargs)
+            def wrapper(*args, **kwargs):
+                request_args = coalesce(request.args)
+                endpoint_kwargs = {**request_args, **kwargs}
+                return func(*args, **endpoint_kwargs)
 
-            return api_wrapper
+            return wrapper
 
         return api_decorator
