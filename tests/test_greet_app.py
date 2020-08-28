@@ -101,7 +101,7 @@ def test_greet_name(client: Client, name: str, alt_name: str):
     """
     Test the ``/greet/<name>`` endpoint.
 
-    Test to check if EasyAPI correctly passes the arguments recieved
+    Test to check if EasyAPI correctly passes the arguments received
     from the route.
 
     For the test we'll send a get request to ``/greet/<name>`` with url
