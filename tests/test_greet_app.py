@@ -116,3 +116,20 @@ def test_greet_name(client: Client, name: str, alt_name: str):
     response = client.get(f"/greet/{name}?name={alt_name}")
     assert response.status_code == 200
     assert response.data == f"Hello, {name}!".encode()
+
+
+def test_custom_greet_mixed_greeting(client: Client, greeting: str, name: str):
+    """
+    Test the ``/custom_greet_mixed/<greeting>`` endpoint.
+
+    Test to check if EasyAPI works as expected when requests invole a mix of
+    parameterized route and a url parameters.
+
+    :param client: Client to the flask app.
+    :param greeting: Greeting to greet the person with.
+    :param name: Name of the person to greet.
+    """
+    common_test(client)
+    response = client.get(f"/custom_greet_mixed/{greeting}?name={name}")
+    assert response.status_code == 200
+    assert response.data == f"{greeting}, {name}!".encode()
