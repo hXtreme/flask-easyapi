@@ -11,3 +11,5 @@ LICENSE: `MIT <https://github.com/hXtreme/flask-easyapi/blob/master/LICENSE>`_
 __author__ = """Harsh Parekh"""
 __email__ = "harsh_parekh@outlook.com"
 __version__ = "0.0.6"
+
+from .flask_easyapi import EasyAPI  # noqa: F401
