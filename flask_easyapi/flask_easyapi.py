@@ -78,7 +78,7 @@ class EasyAPI(Blueprint):
         and its handler. The decorated function will automatically
         receive the url parameters as kwargs.
 
-        .. note::  As of v0.0.7 unlike Blueprint, :meth:`route` and
+        .. note::  As of v0.1.0 unlike Blueprint, :meth:`route` and
             :meth:`add_url_rule` behaves differently for EasyAPI,
             this difference is expected to disappear in later releases.
 

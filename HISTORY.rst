@@ -2,6 +2,22 @@
 History
 =======
 
+0.1.0 (2020-08-28)
+------------------
+
+* Add EasyAPI class that functions as a Blueprint
+  for a set of api call routes.
+
+   * Implement EasyAPI.route(.) decorator.
+
+* Add a example/test Flask hello world greeting app.
+
+   * Add tests for EasyAPI using the greet app.
+
+* Add and update documentation.
+* Refactoring and linting changes.
+* Fix typos.
+
 0.0.6 (2020-08-21)
 ------------------
 
