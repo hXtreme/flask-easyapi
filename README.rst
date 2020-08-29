@@ -42,9 +42,10 @@ Rest API on Flask made a little too easy.
 Features
 --------
 
+* One to one mapping from functions to api endpoints via decorators
+
 Planned
 ^^^^^^^
 
-* One to one mapping from functions to api endpoints via decorators
 * Use type annotations to automatically add type-checks to parameters recieved in the requests to the api.
 * Return HTTP error codes and error messages by raising exceptions.
