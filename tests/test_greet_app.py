@@ -1,12 +1,10 @@
 #!/usr/bin/env python
-
 """
 Test `flask_easyapi` package with `test_apps/greet`.
 """
-
 import pytest
-
 from flask.testing import Client
+
 from .test_apps.greet import greet
 
 
