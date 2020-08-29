@@ -1,4 +1,5 @@
 from flask import Flask
+
 from flask_easyapi import EasyAPI
 
 app = Flask(__name__)

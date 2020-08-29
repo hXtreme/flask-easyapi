@@ -1,12 +1,9 @@
+from functools import partial
+from functools import wraps
 from typing import Callable
-from flask import (
-    Blueprint,
-    request,
-)
-from functools import (
-    partial,
-    wraps,
-)
+
+from flask import Blueprint
+from flask import request
 
 
 class EasyAPI(Blueprint):
