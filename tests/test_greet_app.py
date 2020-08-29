@@ -122,7 +122,7 @@ def test_custom_greet_mixed_greeting(client: Client, greeting: str, name: str):
     """
     Test the ``/custom_greet_mixed/<greeting>`` endpoint.
 
-    Test to check if EasyAPI works as expected when requests invole a mix of
+    Test to check if EasyAPI works as expected when requests involve a mix of
     parameterized route and a url parameters.
 
     :param client: Client to the flask app.
