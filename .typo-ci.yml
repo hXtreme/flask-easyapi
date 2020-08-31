@@ -5,6 +5,7 @@ dictionaries:
 # Any typos we should ignore?
 excluded_words:
   - typoci
+  - csharp   # programming language mentioned in workflow
   - easyapi  # My project name
   - noqa     # noqa tag for flake8
   - rst      # ReSTructured file
