@@ -10,6 +10,6 @@ PyYAML==5.4.1
 sphinx-rtd-theme==0.5.1
 Sphinx==3.5.3
 tox==3.23.0
-twine==3.2.0
+twine==3.4.1
 watchdog==1.0.1
 wheel==0.36.2
