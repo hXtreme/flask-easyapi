@@ -7,7 +7,7 @@ pip==21.0.1
 pytest-runner==5.3.0
 pytest==6.2.3
 PyYAML==5.4.1
-sphinx-rtd-theme==0.5.0
+sphinx-rtd-theme==0.5.1
 Sphinx==3.3.1
 tox==3.20.1
 twine==3.2.0
