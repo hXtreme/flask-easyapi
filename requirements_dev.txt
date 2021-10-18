@@ -9,7 +9,7 @@ pytest==6.2.5
 PyYAML==6.0
 sphinx-rtd-theme==1.0.0
 Sphinx==4.2.0
-tox==3.23.0
+tox==3.24.4
 twine==3.4.1
 watchdog==2.0.2
 wheel==0.36.2
