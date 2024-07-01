@@ -1,5 +1,5 @@
 argh==0.31.2
-black==20.8b1
+black==24.4.2
 bump2version==1.0.1
 coverage==5.5
 flake8==3.9.1
